@@ -388,7 +388,8 @@ const DropZoneRender = forwardRef<HTMLDivElement, DropZoneProps>(
     }
 
     return (
-      <div className={className} style={style} ref={ref}>
+      <>
+        {/* <div className={className} style={style} ref={ref}> */}
         {content.map((item) => {
           const Component = config.components[item.type];
 
@@ -416,7 +417,8 @@ const DropZoneRender = forwardRef<HTMLDivElement, DropZoneProps>(
 
           return null;
         })}
-      </div>
+        {/* </div> */}
+      </>
     );
   }
 );
